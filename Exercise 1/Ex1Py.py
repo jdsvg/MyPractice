@@ -1,12 +1,9 @@
 def val(num, pross, msg = "Number too large. Start over"):
-  
   try: num = int(num)
   except: print("only int numbers"); quit()
-  if pross == 1: 
-    if num < 0 or num>50: print(msg); quit()
-  if pross == 2: 
-    if num < 0 or num>1000: print(msg); quit()
-  return num
+  if pross == 1 and (num < 0 or num>50): print(msg); quit()
+  if pross == 2 and (num < 0 or num>10**3): print(msg); quit()
+  return num  
 #
 arr = []
 
