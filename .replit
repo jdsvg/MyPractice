@@ -1,4 +1,6 @@
-run = "cowsay Configure me!"
+run = "python 'Exercise 1'/Ex1Py.py"
+
+# run = "g++ 'Exercise 1'/Ex1CPP.cpp -o 'Exercise 1'/Ex1CPP; cd 'Exercise 1' && ./Ex1CPP"
 
 [nix]
 channel = "stable-22_11"
