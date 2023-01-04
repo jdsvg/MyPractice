@@ -13,4 +13,3 @@ for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} positio
 #
 for i in arr: print(i)
 a= 9
-b=2
