@@ -12,6 +12,4 @@ num = val(input("Enter the amount of numbers\n:"), 1)
 for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} position \n:' ),2))
 #
 for i in arr: print(i)
-
-
-
+a= 5
