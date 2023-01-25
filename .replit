@@ -1,6 +1,14 @@
-run = "python 'Exercise 1'/Ex1Py.py"
 
+
+run = "chmod +x stp_exe_1.sh; bash stp_exe_1.sh"
+
+
+# run = "python 'Exercise 1'/Ex1Py.py"
 # run = "g++ 'Exercise 1'/Ex1CPP.cpp -o 'Exercise 1'/Ex1CPP; cd 'Exercise 1' && ./Ex1CPP"
 
+
+
+
+#-----------------------------------------
 [nix]
 channel = "stable-22_11"
