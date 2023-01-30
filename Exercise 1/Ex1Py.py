@@ -5,42 +5,36 @@ def val(num, pross, msg = "Number too large. Start over"):
   if pross == 2 and (num < 0 or num>10**3): print(msg); quit()
   return num  
 #
-arr = []
-c = 0
-count = 0
-# No Test
-# num = val(input("Enter the amount of numbers\n:"), 1)
-# No Test
-# for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} position \n:' ),2))
-
-# Test
-arr=[8,12,16,24]
-# shorted arr
-for i in range(0,len(arr)):
-  for j in range(i+1,len(arr)):
-    if(arr[i]<arr[j]):aux= arr[i];arr[i]=arr[j];arr[j]=aux
+def shorted_arr(arr):
+  for i in range(0,len(arr)):
+    for j in range(i+1,len(arr)):
+      if(arr[i]<arr[j]):aux= arr[i];arr[i]=arr[j];arr[j]=aux
+  return arr
 #
-
-count = len(arr)
+def gcd(arr):
+  gcd = arr[0]
+  for i in range(1, len(arr) ):
+    divisor = gcd;dividend = arr[i];remainder = dividend % divisor
+    if remainder == 0 :gcd = divisor
+    else :
+      while remainder != 0: dividend_one = divisor;divisor_one = remainder;remainder = dividend_one % divisor_one;gcd = divisor_one
+  return gcd 
   
-numbers_sorted = arr
-print  ('NUMBERS SORTED IN INCREASING ORDER\n',numbers_sorted)
-gcd = numbers_sorted[0]
+#
+x = 1
+arr = []
+# num = val(input("Enter the amount of numbers\n:"), 1)
+# for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} position \n:' ),2))
+#
+# TEST
+arr=[2,6,6]
+#
+arr = shorted_arr(arr);gcd = gcd(arr)
+for i in arr: x*=i
+print(x**gcd)
 
-for i in range(1, int(count) ):
-  divisor = gcd;dividend = numbers_sorted[i];remainder = dividend % divisor
-  if remainder == 0 :gcd = divisor
-  else :
-    while remainder != 0: dividend_one = divisor;divisor_one = remainder;remainder = dividend_one % divisor_one;gcd = divisor_one
-      
-  
-print(gcd)
 
-# ....
-# product of the whole list: fP(arr)
-# fP(arr)^GCD
 
-print(c)
 
 
     
