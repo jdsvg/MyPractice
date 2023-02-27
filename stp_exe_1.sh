@@ -12,6 +12,8 @@ elif [ $pass -eq 2 ]
 then
   python 'Exercise 1'/Prueba.py
   #echo "Choose a corre" 
+# elif [ $pass -eq 3]
+# then
 else
   echo "Choose a corret option" 
 fi
