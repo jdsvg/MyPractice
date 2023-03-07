@@ -11,9 +11,10 @@ then
 elif [ $pass -eq 2 ] 
 then
   python 'Exercise 1'/Prueba.py
-  #echo "Choose a corre" 
-# elif [ $pass -eq 3]
-# then
+  
+ elif [ $pass -eq 3 ]
+ then
+  g++ Exercise\ 1/Ex1CPP.cpp -o Exercise\ 1/Ex1CPP; ./Ex1CPP  
 else
   echo "Choose a corret option" 
 fi
