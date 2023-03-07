@@ -1,16 +1,18 @@
-def val(num, pross, msg = "Number too large. Start over"):
+def val(num, pross, msg = "Wrong amount of numbers. Start over"):
   try: num = int(num)
-  except: print("only int numbers"); quit()
-  if pross == 1 and (num < 0 or num>50): print(msg); quit()
-  if pross == 2 and (num < 0 or num>10**3): print(msg); quit()
+  except: print("Only int numbers"); quit()
+  if pross == 1 and (num <= 0 or num>50): print(msg); quit()
+  if pross == 2 and (num <= 0 or num>10**3): print(msg); quit()
   return num  
 #
+0
 def shorted_arr(arr):
   for i in range(0,len(arr)):
     for j in range(i+1,len(arr)):
       if(arr[i]<arr[j]):aux= arr[i];arr[i]=arr[j];arr[j]=aux
   return arr
 #
+0
 def gcd(arr):
   gcd = arr[0]
   for i in range(1, len(arr) ):
@@ -21,13 +23,15 @@ def gcd(arr):
   return gcd 
   
 #
+0
+#Start program
 x = 1
 arr = []
-# num = val(input("Enter the amount of numbers\n:"), 1)
-# for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} position \n:' ),2))
+num = val(input("Enter the amount of numbers\n:"), 1)
+for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} position \n:' ),2))
 #
 # TEST
-arr=[2,6,6]
+# arr=[2,6,6]
 #
 arr = shorted_arr(arr);gcd = gcd(arr)
 for i in arr: x*=i
