@@ -2,8 +2,9 @@ def func():
   d = {1:"a", 2.0:"b", 2: "c", 2:"v"}
   return d[2.0]
 
-print(func())
-
+# print(func())
+i = (1,"3")
+print(i)
 
 
 #x= {9,8,5}

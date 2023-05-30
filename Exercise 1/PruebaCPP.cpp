@@ -20,6 +20,6 @@ int main() {
   cout << "Escribe" << endl;
 	cin >> num;    //Reading input from STDIN
 	cout << "Input number is " << num << endl;	// Writing output to STDOUT
-
+cout << typeid(<object>).name() << endl;
   //val(1,2);
 }
