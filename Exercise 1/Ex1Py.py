@@ -35,7 +35,7 @@ for i in range(1,num+1): arr.append(val(input(f'Enter the number for {i} positio
 #
 arr = shorted_arr(arr);gcd = gcd(arr)
 for i in arr: x*=i
-print(x**gcd)
+print("GCD: ",x**gcd)
 
 
 
