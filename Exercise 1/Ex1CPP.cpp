@@ -11,7 +11,6 @@ int val(int num, int pross, string msg="Wrong amount of numbers. Start over"){
   }else{
     return num;
   }
-  
 }
 
 int main() {
